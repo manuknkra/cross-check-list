@@ -1,0 +1,33 @@
+<!-- this file loads content for monitor dashboard pages -->
+<!-- header content -->
+<div ng-include src="'partials/header.html'"></div>
+<!-- main menu content -->
+<div ng-include src="'partials/menu.html'"></div>
+<!-- monitor pages content -->
+<div class="row">
+    <div class="col-xs-12" id="sv-content-container">
+    	<!-- left side container -->
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-1" id="sv-left-side-container">
+            <div id="sv-leftnav-menu-list">
+                <ul class="sv-left-side-menu">
+                    <li role="presentation" ng-repeat="tab in tabNames" ui-sref-active="current" ng-click="selectTab('monitor', tab)">
+                        <a href ui-sref="monitor.{{tab}}">{{tabs[tab].title}}</a>
+                        <div class="sv-leftnav-arrow"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- page title & page level controls -->
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-11" id="sv-page-title-controls">
+            <monitor-page-controls></monitor-page-controls>
+        </div>
+        <!-- right side container -->
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-11" id="sv-right-side-container" ui-view></div>
+    </div> 
+</div> 
+
+<!-- footer 1 - customer content -->
+<!--
+<div ng-include src="'partials/footer-customer.html'"></div>-->
+<!-- footer 2 - sandvine content -->
+<div ng-include src="'partials/footer-sandvine.html'"></div>

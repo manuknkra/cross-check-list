@@ -60,6 +60,7 @@ gulp.task('vendorScripts', function() {
     return gulp.src([
             'bower_components/**/angular.js',
             'bower_components/**/angular-resource.js',
+            'bower_components/**/dist/jquery.js',
             'bower_components/**/assets/javascripts/bootstrap.js',
             'bower_components/**/release/angular-ui-router.min.js',
             'bower_components/**/ui-bootstrap-tpls.js'
