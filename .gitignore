@@ -1,8 +1,4 @@
-env
-*.pyc
-db.sqlite3
 .bowerrc
 node_modules
 bower_components
-static/*.css
-static/*.js
+dist
