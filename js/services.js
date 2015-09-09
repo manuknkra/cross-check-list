@@ -5,6 +5,24 @@ angular.module('CrossCheckList').service('ListDataService', function($http, $q) 
             'name': 'TX',
             'owner': 'jtuck',
             'state': 'running'
+        },
+        {
+            'type': 'firewall',
+            'name': 'TX',
+            'owner': 'jtuck',
+            'state': 'running'
+        },
+        {
+            'type': 'firewall',
+            'name': 'TX',
+            'owner': 'jtuck',
+            'state': 'running'
+        },
+        {
+            'type': 'firewall',
+            'name': 'TX',
+            'owner': 'jtuck',
+            'state': 'running'
         }
     ];
     this.getListData = function(url) {

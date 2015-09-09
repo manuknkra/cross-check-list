@@ -16,3 +16,12 @@ angular.module('CrossCheckList').controller('List', ['$scope', '$rootScope', '$s
         $scope.getListData();
     }
 ]);
+angular.module('CrossCheckList').controller('ItemController', ['$scope',
+    function(scope) {
+        scope.$parent.isopen = (scope.$parent.default === scope.item);
+
+        scope.$watch('isopen', function(newValue, oldValue, scope) {
+            scope.$parent.isopen = newValue;
+        });
+    }
+]);
